@@ -29,7 +29,7 @@ export default {
     },
     updateTocNav() {
       const previewEl = this.$refs.preview.$el;
-      const anchors = previewEl.querySelectorAll('h2,h3');
+      const anchors = previewEl.querySelectorAll('h1,h2,h3,h4');
       const titles = Array.from(anchors).filter((title) => !!title.innerText.trim());
 
       if (!titles.length) {
